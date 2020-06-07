@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script>src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</script>
+  <link href="page.css" type="text/css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "admin" && form.pwd.value == "12345")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+</head>
+<body>
+
+<div class="container-fluid bg" class="bg" >
+	 
+
+	<div class="row">
+		<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		<div class="col-md-4 col-sm-4 col-xs-12">
+			<h2 align ="center" style="margin-top: 80px" >LOGIN</h2>
+
+			<form class="form-container" name="loginForm" method="post" action="Details_page.html" style="margin-top: 50px" id="form1">
+				
+					<div class="form-group">
+						<label for="InputEmail1"></label>
+						<input type="text" class="form-control" id="InputEmail1" placeholder="Username" name="userid" required="">
+					
+					</div>
+					<div class="form-group">
+						<label for="InputPassword1"></label>
+						<input type="Password" class="form-control" id="InputPassword1" placeholder="Password" name="pwd" required="">
+					</div>
+					<br /><br />
+
+				
+
+
+					<div align="center">
+					<button type="submit" form="form1" value="Submit" class="btn btn-success" style="width: 150px; height: 35px;" onclick="return check(this.form)">Submit</button></button>
+					 
+					
+			</form>
+		</div>
+		<div class="col-md-4 col-sm-4 col-xs-12"></div>
+  
+</div>
+
+</body>
+</html>

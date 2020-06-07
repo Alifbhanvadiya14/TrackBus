@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>detail</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script>src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</script>
+  <link href="page.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<div class="container-fluid bg" class="bg">
+   <div class="navbar nav">
+  <a class="active " id ="Savari"href="bus_status.html"><span style="margin-right:10px"class="glyphicon glyphicon-home"></span>SAVAARI</a>
+ 
+  <a class="active " id="logout" href="bus_detail.html"><span style="margin-right: 10px"class="glyphicon glyphicon-off"></span>LogOut</a>
+</div>
+
+	<div class="row">
+		<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		<div class="col-md-4 col-sm-4 col-xs-12">
+			<h2 align ="center" style="margin-top: 50px">Detail</h2>
+
+     <form   class =form-container method="post" action="" style="margin-top: 50px" id="form2" >
+        
+          <div class="form-group">
+            <label for="code">Enter Code</label>
+            <input type="text" class="form-control" id="code" placeholder="Enter Code" >
+            <div>
+              
+               <button type="button" form="form2" value="Check" class="btn btn-primary" style="width: 75px; height: 35px; margin-top: 10px;">CHECK</button>
+            </div>
+          
+          </div>
+          <div class="form-group" style="margin-top: 50px">
+            <label for="Dname">Driver name: </label>  <label for="DName">Name</label><br>
+             <label for="Cname">Conductor Name:</label> <label for="Cname">Name </label><br>
+             <label for="jdate">Journey Date:</label>  <label for="jdate">Date</label><br>
+ 
+              <label for="adatetime">Arrival Date:</label>  <label for="adatetime">dtime</label><br>
+              <label for="adatetime">Arrival Time:</label>  <label for="adatetime">dtime</label><br>
+               <label for="ddatetime">Departure Date:</label>  <label for="ddatetime">dtime</label><br>
+                <label for="ddatetime">Departure Time:</label>  <label for="ddatetime">dtime</label><br>
+                <label for="tpass">Total Passenger:</label>  <label for="jdate">total</label><br>
+
+
+                
+              
+                           
+          </div>
+         
+
+        
+
+
+          <div>
+              
+               <button type="button" form="form2" value="StartJourney" class="btn btn-success" style="width: 110px; height: 35px;">Start Journey</button>
+            </div>
+           
+          
+      </form>
+
+</div>
+  <div class="col-md-4 col-sm-4 col-xs-12"></div>
+  
+</div>
+
+</body>
+</html>
